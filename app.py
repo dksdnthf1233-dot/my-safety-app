@@ -141,8 +141,7 @@ with tab1:
 
 with tab2:
   gallery_photo = st.file_uploader(
-      "스마트폰에서 사진 선택", type=["jpg", "jpeg", "png", "webp"]
-  )
+      "스마트폰에서 사진 선택" )
 
 target_file = cam_photo if cam_photo is not None else gallery_photo
 
