@@ -62,11 +62,11 @@ st.markdown(
 API_KEY = ""
 if "GEMINI_API_KEY" in st.secrets:
   API_KEY = st.secrets["GEMINI_API_KEY"]
-else:
+if not API_KEY:
   API_KEY = st.sidebar.text_input(
       "🔑 Google AI Studio API 키 입력",
       type="password",
-      help="Streamlit Secrets에 키를 등록하면 이 입력창은 사라집니다.",
+      help="여기에 키를 입력하세요",
   )
 
 
